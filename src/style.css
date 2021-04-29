@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+
+  background-color: black;
+}
+
+.dvd_logo {
+  position: absolute;
+
+  width: 211px;
+  height: 101px;
+
+  opacity: 0;
+
+  fill: white;
+}

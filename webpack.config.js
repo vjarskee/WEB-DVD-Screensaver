@@ -10,7 +10,7 @@ module.exports = (env, options) => {
     entry: './src/index.js',
     output: {
       filename: 'script.js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'docs'),
       environment: {
         arrowFunction: false,
         bigIntLiteral: false,

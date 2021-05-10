@@ -1,6 +1,6 @@
 import './style.css'
 
-const colors = ['red', 'blue', 'white', 'magenta', 'pink', 'green', 'cyan']
+const colors = ['white', 'red', 'purple', 'fuchsia', 'green', 'lime', 'yellow', '	blue', 'teal', 'aqua']
 
 const logo = document.querySelector('.dvd_logo')
 
@@ -18,33 +18,42 @@ logo.style.fill = colors[Math.floor(Math.random() * colors.length)]
 
 let animation_interval = 5
 
-let x_direction = Math.random() > 0.5
-let y_direction = Math.random() > 0.5
-
 logo.style.opacity = 1
+
+let state = {
+  x_direction: Math.random() > 0.5,
+  y_direction: Math.random() > 0.5
+}
+
+const setColor = () => {
+  let currentColor = logo.style.fill
+  while (logo.style.fill === currentColor) {
+    logo.style.fill = colors[Math.floor(Math.random() * colors.length)]
+  }
+}
 
 let x_interval = setInterval(() => {
   if (parseInt(logo.style.left) === right_border) {
-    x_direction = false
-    logo.style.fill = colors[Math.floor(Math.random() * colors.length)]
+    state.x_direction = false
+    setColor()
   }
   if (parseInt(logo.style.left) === 0) {
-    x_direction = true
-    logo.style.fill = colors[Math.floor(Math.random() * colors.length)]
+    state.x_direction = true
+    setColor()
   }
-  if (x_direction) logo.style.left = parseInt(logo.style.left) + 1 + 'px'
-  if (!x_direction) logo.style.left = parseInt(logo.style.left) - 1 + 'px'
+  if (state.x_direction) logo.style.left = parseInt(logo.style.left) + 1 + 'px'
+  if (!state.x_direction) logo.style.left = parseInt(logo.style.left) - 1 + 'px'
 }, animation_interval)
 
 let y_interval = setInterval(() => {
   if (parseInt(logo.style.top) === bottom_border) {
-    y_direction = false
-    logo.style.fill = colors[Math.floor(Math.random() * colors.length)]
+    state.y_direction = false
+    setColor()
   }
   if (parseInt(logo.style.top) === 0) {
-    y_direction = true
-    logo.style.fill = colors[Math.floor(Math.random() * colors.length)]
+    state.y_direction = true
+    setColor()
   }
-  if (y_direction) logo.style.top = parseInt(logo.style.top) + 1 + 'px'
-  if (!y_direction) logo.style.top = parseInt(logo.style.top) - 1 + 'px'
+  if (state.y_direction) logo.style.top = parseInt(logo.style.top) + 1 + 'px'
+  if (!state.y_direction) logo.style.top = parseInt(logo.style.top) - 1 + 'px'
 }, animation_interval)

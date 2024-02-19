@@ -1,31 +1,30 @@
 {
-  "name": "dvd-screensaver-html-css",
+  "name": "web-dvd-screensaver",
   "version": "1.0.0",
-  "description": "DVD Screensaver Imitation on HTML+CSS+JS",
+  "description": "DVD Screensaver Imitation on HTML+CSS+TypeScript",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "webpack serve --mode development --progress",
-    "build": "webpack --mode production --progress"
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint src/index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vjarskee/DVD-Screensaver-HTML-CSS.git"
+    "url": "https://github.com/vjarskee/DVD-Screensaver-HTML-CSS.git"
   },
   "author": "vjarskee",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vjarskee/DVD-Screensaver-HTML-CSS/issues"
   },
   "homepage": "https://github.com/vjarskee/DVD-Screensaver-HTML-CSS#readme",
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/preset-env": "^7.14.0",
-    "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^5.2.4",
-    "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.5.1",
-    "webpack": "^5.36.1",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.3"
   }
 }

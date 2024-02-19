@@ -8,7 +8,7 @@ on:
       - completed
 
 jobs:
-  Build and deploy:
+  Build-and-deploy:
     runs-on: ubuntu-latest
 
     permissions:

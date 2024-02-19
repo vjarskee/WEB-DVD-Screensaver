@@ -8,7 +8,7 @@ export default defineConfig({
     }
   },
 
-  base: '/',
+  base: '',
 
   root: resolve(process.cwd(), 'src'),
 

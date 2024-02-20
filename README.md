@@ -3,11 +3,18 @@
 ## Description
 
 <p align="center">
-![Lint](https://github.com/vjarskee/WEB-DVD-Screensaver/actions/workflows/lint.yaml/badge.svg?branch=main)
-![Deployment](https://github.com/vjarskee/WEB-DVD-Screensaver/actions/workflows/deploy.yaml/badge.svg?branch=main)
+  <img 
+    src="https://img.shields.io/github/actions/workflow/status/vjarskee/WEB-DVD-Screensaver/lint.yaml?branch=main&style=flat-square&logo=eslint&label=Lint" alt="Lint"
+  >
+  <img 
+    src="https://img.shields.io/github/deployments/vjarskee/WEB-DVD-Screensaver/github-pages?style=flat-square&logo=vite&logoColor=white&label=Deployment" 
+    alt="Deployment"
+  >
 </p>
 <p align="center">DVD Screensaver Imitation on HTML+CSS+TypeScript</p>
-<p align="center">[Preview](https://vjarskee.github.io/WEB-DVD-Screensaver/)</p>
+<p align="center">
+  <a href="https://vjarskee.github.io/WEB-DVD-Screensaver/">Preview</a>
+</p>
 
 ## Run
 

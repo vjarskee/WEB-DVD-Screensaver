@@ -1,7 +1,5 @@
 <h2 align="center">WEB DVD Screensaver</h2>
 
-## Description
-
 <p align="center">
   <img 
     src="https://img.shields.io/github/actions/workflow/status/vjarskee/WEB-DVD-Screensaver/lint.yaml?branch=main&style=flat-square&logo=eslint&label=Lint" alt="Lint"
@@ -11,6 +9,9 @@
     alt="Deployment"
   >
 </p>
+
+## Description
+
 <p align="center">DVD Screensaver Imitation on HTML+CSS+TypeScript</p>
 <p align="center">
   <a href="https://vjarskee.github.io/WEB-DVD-Screensaver/">Preview</a>

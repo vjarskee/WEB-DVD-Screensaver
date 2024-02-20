@@ -1,9 +1,30 @@
-# DVD-Screensaver-HTML-CSS
+<h2 align="center">WEB DVD Screensaver</h2>
 
-DVD Screensaver Imitation on HTML+CSS+JS
+## Description
 
-Install project: **npm i**
+<p align="center">
+![Lint](https://github.com/vjarskee/WEB-DVD-Screensaver/actions/workflows/lint.yaml/badge.svg?branch=main)
+![Deployment](https://github.com/vjarskee/WEB-DVD-Screensaver/actions/workflows/deploy.yaml/badge.svg?branch=main)
+</p>
+<p align="center">DVD Screensaver Imitation on HTML+CSS+TypeScript</p>
+<p align="center">[Preview](https://vjarskee.github.io/WEB-DVD-Screensaver/)</p>
 
-Serve project: **npm start**
+## Run
 
-Build project: **npm run build**
+#### Install
+
+```bash
+yarn install
+```
+
+#### Serve
+
+```bash
+yarn start
+```
+
+#### Build
+
+```bash
+yarn build
+```
